@@ -1,0 +1,109 @@
+* {margin: 0; padding: 0;}
+
+#container {
+    width: 900px;
+    height: 500px;
+    background-color: skyblue;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+  
+}
+
+nav {
+    width: 300px;
+    height: 500px;
+    background-color: lightgreen;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items:center;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+.fa {
+    margin-right: 20px;
+    
+}
+nav ul {
+    list-style-type: none;
+}
+nav ul li {
+    margin: 15px;
+    /* transition: color 1s; font-size 1s; */
+    transition: all 1s;
+}
+nav ul#social {
+    display: flex;
+    flex-direction: row;
+}
+.fa-facebook {
+    color: blue;
+}
+.fa-youtube {
+    color: red;
+}
+.fa-twitter{
+    color: lightskyblue;
+}
+nav ul li:hover { 
+    color: blue;
+    cursor: pointer;
+    font-size: 25px;
+}
+a {
+    text-decoration: none;
+    color: magenta;
+}
+a.active {
+    font: bold;
+    color: red;
+    font-size: larger;
+}
+#content {
+    width: 600px;
+    height: 500px;
+    background-color: green;
+}
+#package-container {
+    width:600px;
+    height:300px;
+    border: 2px solid black;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;    
+}
+.package {
+    width: 150px;
+    height:200px;
+    background-color:white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+.package-img { 
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: brown;
+}
+
+
+/* float, display:inline-block, display:flex */
+/* place display:flex in the parent so that the content inside the parent can be flexible, by default, the flex diretion becomes row when flex is used.  */
+/* flex always comes with two properties, flex-direction:.....;,justify-content:.....;, align-items:.....; */
+/* justify content center always follows the flex direction (flex-start, starts the content from the top), starts from top to bottom*/
+/* align-items is the perpendicular direction to the justify, starts from left to right */
+/* justify-content:space-between, space-around */
+/* when you go through a new language by ourselves try not to copy and paste. dive in to understand each new command and what the new terms are. thats the difference with doing coding by hand and copy pasting. */
+
+/* dev.to  csstricks.com cssbattle.com hackerrank.com 100dayscss.com  medium.com(paid wbsite tho)* coffescript /
+/* kevin powell for web development, eric elliot for javascript, malcolm kee */
+/* challange for today recreate landingpage1 with fonts and logos using display flex, flex direction, align items and justify, try using display flex for all the */
+/* gradiants for next week, try to figure out over the weekend */
+/*  */
