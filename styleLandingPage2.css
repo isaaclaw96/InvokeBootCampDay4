@@ -3,17 +3,27 @@
 #mainContainer {
     width: 823px;
     height: 4100px;
-    background-color: lightgray;
     margin: 0 auto;
 }
-.content-one {
+#content-background {
     width: 823px;
     height: 700px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-image: url(day4_challenge/landing2/images/hero-1-bg-shape-cover.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.content-one {
+    width: 823px;
+    height: 645px;
+    display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: lightgreen;
 }
 nav {
     width: 595px;
@@ -21,22 +31,17 @@ nav {
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-    justify-content:space-evenly;
+    justify-content:space-between;
     align-items: center;
-    background-color: lightpink;
     font-size: small;
     
 }
-nav h4 {
-    margin-left: -50px;
-    box-sizing: border-box;
-}
-
 nav ul {
     list-style-type: none;
     display: flex;
     justify-content: space-evenly;
     font-size: 10px;
+    font-weight: bold;
 }
 nav ul li {
     margin: 5px;
@@ -46,13 +51,36 @@ nav#loginButton {
     justify-content: flex-end;
     align-items: center;
 }
-#loginButton {
-
+#loginBox {
+    width: 173px;
+    height: 37px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+    font-size: 12px;
 }
+#loginButton {
+    width: 70px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #97bb7d;
+}
+#loginJoin {
+    width: 80px;
+    height: 30px;
+    background-color: #97bb7d;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 8px 0;
+    box-sizing: border-box;
+    color: white;
+}
+
 #highqualitycourses {
     width: 421px;
     height: 300px;
@@ -60,8 +88,11 @@ nav#loginButton {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: khaki;
     text-align: center;
+    font-size: 15px;
+}
+#highqualitycourses h5   {
+    color: #97bb7d;
 }
 #buttonBox {
     width: 220px;
@@ -70,30 +101,29 @@ nav#loginButton {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    background-color: lawngreen;
 }
 #getQuote {
     width: 100px;
     height: 30px;
-    border-radius: 10px;
-    padding: 6px 0;
+    border-radius: 5px;
+    padding: 8px 0;
     margin-right: 10px;
     box-sizing: border-box;
-    border: 1px solid blue;
+    background-color: #97bb7d;
     text-align: center;
-    color: blue;
+    color: white;
     font-size: 12px;
 }
 #learnMore {
     width: 100px;
     height: 30px;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 6px 0;
     margin-left: 10px;
     box-sizing: border-box;
-    border: 1px solid blue;
+    border: 1px solid #97bb7d;
     text-align: center;
-    color: blue;
+    color: #97bb7d;
     font-size: 12px;
 }
 #socialLogos {
@@ -103,12 +133,13 @@ nav#loginButton {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: burlywood;
+    
 }
 .socialMedia {
     width: 92px;
     height: 80px;
-    background-color: blueviolet;
+    text-align: center;
+    color: #737373;
 }
 #content-two {
     width: 823px;
@@ -117,15 +148,22 @@ nav#loginButton {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: cadetblue;
 }
 .contentHeader {
     width: 622px;
     height: 90px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: flex-start;
+    font-size: 15px;
+}
+.contentHeader h5 {
+    color:#97bb7d ;
+}
+.contentHeader p {
+    font-size: 10px;
+    color: gray;
 }
 #trainingContent {
     width: 622px;
@@ -133,7 +171,7 @@ nav#loginButton {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center; background-color: chocolate;
+    align-items: center;
     font-size: 12px;
 }
 .trainingCourses {
@@ -143,32 +181,38 @@ nav#loginButton {
     flex-direction: column;
     justify-content: space-around;
     align-items: left;
-    background-color: darkblue;
     padding: 15px;
     box-sizing: border-box;
+    font-size: 8px;
+    box-shadow: 0 0 3px black;
+}
+.green {
+    background-color: #97bb7d;
+
 }
 .trainingLogo {
     width: 42px;
     height: 42px;
     overflow: hidden;
-    background-color: darkred;
+}
+.trainingLogo img {
+    width: 100%;
+    height: 100%;
 }
 .trainingHeader {
     width: 84px;
     height: 15px;
-    background-color: darkred;
     text-align: left;
 }
 .miniLine {
     width: 29px;
     height: 2px;
-    background-color: darkred;
+    background-color: #e64040;
     text-align: left;
 }
 .trainingText {
     width: 80px;
     height: 35px;
-    background-color: darkred;
     text-align: left;
 }
 #content-three {
@@ -178,13 +222,15 @@ nav#loginButton {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    background-color: deeppink;
 }
 #girlPic {
     width: 300px;
-    height: 260px;
+    height: 300px;
     overflow: hidden;
-    background-color: lightsalmon;
+}
+#girlPic img {
+    width: 100%;
+    height: 100%;
 }
 #mostPopular {
     width: 300px;
@@ -194,32 +240,29 @@ nav#loginButton {
     justify-content: space-evenly;
     align-items: flex-start;
     text-align: left;
-    background-color: lightsalmon;
     padding: 25px;
     box-sizing: border-box;
 }
 #mediumLine {
     width: 52px;
     height: 5px;
-    background-color: red;
+    background-color: #e64040;
 }
 #popularHeader {
     width: 157px;
     height: 58px;
-    background-color: lightskyblue;
     font-size: 10px;
 }
 #popularContent {
     width: 200px;
     height: 46px;
-    background-color: lightskyblue;
     font-size: 10px;
 }
 #popularButton {
     width: 64px;
     height: 15px;
-    background-color: lightskyblue;
-    color: lightgreen;
+    color: #97bb7d;
+    font-weight: bold;
     font-size: 10px;
 }
 #content-four {
@@ -229,7 +272,7 @@ nav#loginButton {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: lightsteelblue;
+    background-color: #eef8ed;
 }
 #packageContainer {
     width: 622px;
@@ -238,7 +281,6 @@ nav#loginButton {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    background-color: lime;
 }
 .packageContent {
     width: 138px;
@@ -247,18 +289,20 @@ nav#loginButton {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    background-color: magenta;
 }
 .packageImg {
     width: 138px;
     height: 174px;
     overflow: hidden;
-    background-color: lightpink;
+}
+.packageImg img {
+    width: 100%;
+    height: 100%;
 }
 .packagetextContent {
     width: 138px;
     height: 204px;
-    border: 1px solid black;
+    background-color: white;
     display: flex;
     flex-direction: column;
     padding: 15px 8px;
@@ -268,18 +312,27 @@ nav#loginButton {
 .packageText {
     width: 117px;
     height: 95px;
-    background-color: lightpink;
     font-size: 10px;
     /* padding: 5px;
     box-sizing: border-box; */
     line-height: 1.5;
 }
-
+.green1 {
+    color: #97bb7d;
+    font-weight: bold;
+}
 .priceTag {
     width: 63px;
     height: 13px;
-    background-color: lightpink;
     font-size: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: bold;
+}
+.orange {
+    color: #ffbc8e;
 }
 .packageLogo {
     width:123px;
@@ -288,7 +341,6 @@ nav#loginButton {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color: lightpink;
 }
 .packageLearn {
     width: 85px;
@@ -296,9 +348,10 @@ nav#loginButton {
     border-radius: 30px;
     padding: 8px;
     box-sizing: border-box;
-    border: 1px solid black;
     text-align: center;
     font-size: 10px;
+    color: #97bb7d;
+    border: 1px solid #97bb7d;
 }
 #content-five {
     width: 823px;
@@ -307,7 +360,6 @@ nav#loginButton {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: blanchedalmond;
 }
 #productContainer {
     width: 605px;
@@ -316,7 +368,6 @@ nav#loginButton {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    background-color: lightgray;
 }
 .productContent {
     width: 187px;
@@ -325,61 +376,69 @@ nav#loginButton {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
-    background-color: lightgreen;
     padding: 10px 10px;
     box-sizing: border-box;
     text-align: left;
     font-size: 12px;
+    box-shadow: 0 0 3px black;
 }
 .productImg {
     width: 60px;
     height: 60px;
     overflow: hidden;
-    background-color: lightpink;
 }
 .freeText {
     width: 44px;
     height: 13px;
-    background-color: lightpink;
     font-size: 12px;
+    font-weight: bold;
 }
 .productText1 {
     width: 150px;
     height: 28px;
-    background-color: lightpink;
+    font-weight: bold;
+    color: gray;
 }
 .productPrice {
-    width: 48px;
+    width: 55px;
     height: 42px;
    font-size: 15px;
-   background-color: lightpink;
+}
+.productPrice h3 {
+    color: #97bb7d;
+}
+.productPrice h6 {
+    color: #8ec2f2;
 }
 .productText2 {
     width: 150px;
     height: 28px;
-    background-color: lightpink;
+    font-size: 10px;
+    color: gray;
 }
 .productTrial {
     width: 142px;
     height: 35px;
     color: white;
-    background-color: lightpink;
+    background-color: #97bb7d;
     text-align: center;
-    border: 1px solid black;
-    border-radius: 15px;
+    border-radius: 5px;
     padding: 10px 0;
     box-sizing: border-box;
+    font-weight: bold;
 }
 .productDesc {
     width: 142px;
     height: 146px;
-    background-color: lightpink;
 }
 .productDesc ul {
     list-style-type: none;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+.fa-gratipay {
+    color:#97bb7d ;
 }
 #content-six {
     width: 823px;
@@ -388,7 +447,6 @@ nav#loginButton {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: lime;
 }
 #testimonyContainer {
     width: 622px;
@@ -397,7 +455,6 @@ nav#loginButton {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    background-color: magenta;
 }
 .testimonyContent {
     width: 232px;
@@ -406,7 +463,6 @@ nav#loginButton {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: lightseagreen;
     text-align: center;
     font-size: 12px;
 }
@@ -415,11 +471,17 @@ nav#loginButton {
     height: 78px;
     overflow: hidden;
     background-color: gray;
+    border-radius: 50%;
+}
+.testimonyImg img {
+    width: 100%;
+    height: 100%;
 }
 .testimonyText {
     width: 187px;
     height: 35px;
-    background-color: gray;
+    color: gray;
+    font-size: 10px;
 }
 .testimonyStars {
     width: 78px;
@@ -428,12 +490,13 @@ nav#loginButton {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: gray;
+}
+.fa-star {
+    color: yellow;
 }
 .testimonyName {
     width: 78px;
     height: 30px;
-    background-color: gray;
 }
 #content-seven {
     width: 823px;
@@ -442,7 +505,6 @@ nav#loginButton {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: honeydew;
 }
 #newsletterHead {
     width: 293px;
@@ -453,9 +515,15 @@ nav#loginButton {
     align-items: center;
     text-align: center;
     font-size: 12px;
-    background-color: lightgrey;
     padding: 10px 10px;
     box-sizing: border-box;
+}
+#news {
+    color: #97bb7d;
+}
+#problem {
+    color: gray;
+    font-size: smaller;
 }
 #emailBox {
     width: 411px;
@@ -464,7 +532,6 @@ nav#loginButton {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    background-color: lightgrey;
     padding: 10px;
     box-sizing: border-box;
 }
@@ -472,21 +539,21 @@ nav#loginButton {
     width: 327px;
     height: 34px;
     text-align: left;
-    background-color: lightpink;
     font-size: 12px;
     padding: 8px;
     box-sizing: border-box;
+    box-shadow: 0 0 1px black;
 }
 #subscribe {
     width: 66px;
     height: 34px;
     text-align: center;
-    background-color: lightgreen;
-    border-radius: 30px;
-    border: 1px solid black;
+    background-color: #97bb7d;
+    border-radius: 1px;
     padding: 8px 5px;
     box-sizing: border-box;
     font-size: 12px;
+    color: white;
 }
 #content-eight {
     width: 823px;
@@ -495,7 +562,6 @@ nav#loginButton {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: coral;
 }
 #footerWrapper {
     width: 605px;
@@ -504,21 +570,25 @@ nav#loginButton {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: cyan;
 }
 .footer {
     width: 95px;
     height: 105px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
     font-size: 10px;
-    background-color: darkblue;
+}
+.footer h4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
 }
 .footer ul li {
     list-style-type: none;
-    padding: 5px;
+    padding: 5px 0;
     box-sizing: border-box;
 }
 .two {
@@ -532,7 +602,7 @@ nav#loginButton {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: darkgoldenrod;
+    background-color: #fafafa;
 }
 #finalContainer {
     width: 604px;
@@ -541,20 +611,39 @@ nav#loginButton {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: purple;
     font-size: 10px;
 }
 #allRights {
-    width: 216px;
+    width: 230px;
     height: 18px;
     justify-content: flex-start;
-    background-color:pink;
+    color: gray;
+    font-size: 10px;
 }
 #socialmediaLogos {
     width: 81px;
     height: 18px;
     justify-content: flex-end;
-    background-color: pink;
     padding-right: 15px;
     box-sizing: border-box;
+}
+.fa-phone {
+    color: #97bb7d ;
+}
+.fa-location {
+    color:#97bb7d ;
+}
+.fa-envelope {
+    color:#97bb7d ;
+}
+.fa-facebook {
+    color: #97bb7d ;
+    margin-right: 5px;
+}
+.fa-instagram {
+    color: #97bb7d ;
+}
+.fa-twitter {
+    color: #97bb7d ;
+    margin-right: 5px;
 }
